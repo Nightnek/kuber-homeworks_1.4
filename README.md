@@ -25,21 +25,37 @@
    - `nginx` (порт `80`).
    - `multitool` (порт `8080`).
    - Количество реплик: `3`.
+  
+<img width="725" height="146" alt="image" src="https://github.com/user-attachments/assets/b0c1bf38-6224-4c70-935a-bfb4dfeb3da2" />
+
+
 2. **Создать Service типа ClusterIP**, который:
    - Открывает `nginx` на порту `9001`.
    - Открывает `multitool` на порту `9002`.
+  
+<img width="715" height="130" alt="image" src="https://github.com/user-attachments/assets/c28f5946-ffca-4d96-a78b-14f60bd4f96f" />
+
+
 3. **Проверить доступность** изнутри кластера:
 ```bash
  kubectl run test-pod --image=wbitt/network-multitool --rm -it -- sh
  curl <service-name>:9001 # Проверить nginx
  curl <service-name>:9002 # Проверить multitool
 ```
+
+<img width="730" height="537" alt="image" src="https://github.com/user-attachments/assets/0540ec56-87c5-43dc-968d-7ed7de0466d8" />
+
+
 4. **Создать Service типа NodePort** для доступа к `nginx` снаружи.
 5. **Проверить доступ** с локального компьютера:
 ```bash
  curl <node-ip>:<node-port>
    ```
  или через браузер.
+
+<img width="683" height="436" alt="image" src="https://github.com/user-attachments/assets/3b1c3116-bf5c-433b-a5e5-f992d9b45510" />
+
+
 
 ### **Что сдать на проверку**
 - Манифесты:
