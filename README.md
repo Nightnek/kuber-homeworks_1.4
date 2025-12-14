@@ -88,6 +88,13 @@
    ```
  или через браузер.
 
+<img width="554" height="81" alt="image" src="https://github.com/user-attachments/assets/ec49ed45-45df-4af4-8110-2057b6c7805e" />
+<img width="569" height="94" alt="image" src="https://github.com/user-attachments/assets/83e62edb-5c5a-4a3c-a68d-22d4043e41e8" />
+<img width="548" height="68" alt="image" src="https://github.com/user-attachments/assets/24b07d0b-f93f-4de7-8a33-997f313316d2" />
+<img width="790" height="100" alt="image" src="https://github.com/user-attachments/assets/b06eea93-5462-43d6-81cf-42cb07ceea24" />
+<img width="786" height="483" alt="image" src="https://github.com/user-attachments/assets/c05b0082-e69a-4eb4-8d09-a40b0f1db6a1" />
+
+
 ### **Что сдать на проверку**
 - Манифесты:
   - `deployment-frontend.yaml`
